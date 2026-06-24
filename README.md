@@ -24,8 +24,7 @@ This project focuses on enhancing an existing Traffic Signal Controller system t
 * **Wait Feedback:** When a request is made, the `led_wait` indicator turns on immediately to inform the pedestrian that the controller has processed the request.
 
 > **[도표 1: State Machine Diagram]**
-> * 
-> * 프로젝트의 상태 천이도(S0~S4)를 배치하세요. 기존 FSM 구조 내에서 입력단만 최적화하여 기능을 확장했음을 보여주는 핵심 이미지입니다.
+> ![Digram](상태천이도.png)
 
 ---
 
@@ -52,12 +51,13 @@ S2: begin hwy = RED;    cntry = RED; led_wait = 1'b1; end
 * **Pedestrian Button Test:** Verified that `btn_pedestrian` triggers the same transition sequence as vehicle entry, ensuring pedestrian crossing capability without modifying the base logic.
 
 > **[도표 2: Vivado Simulation 파형]**
-> * 시뮬레이션 결과 화면을 캡처하여 배치하세요. 보행자 버튼 입력 시 기존 사이클대로 신호등이 정상 변환되는지 빨간 박스로 강조하여 보여주세요.
+> ![Simulation](보행자버튼.png)
+  ![Simulation](대기안내.png)
 
 ### 4.2 Conclusion
 본 프로젝트를 통해 기존의 차량 중심 Traffic Signal Controller를 보행자 관점을 추가하여 개선하였으며, 불필요한 하드웨어 리소스 추가 없이 효율적인 논리 확장성을 검증했습니다.
 
 * **[결과 보고서 (PDF)](디지털논리회로_기말프로젝트_결과보고서_송민호.pdf)**
-* **[프로젝트 소스 코드 (Verilog)](디지털논리회로_기말프로젝트_송민호.pdf)**
+* **[발표자료 (PDF)](디지털논리회로_기말프로젝트_송민호.pdf)**
 
 
